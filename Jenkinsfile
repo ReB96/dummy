@@ -56,7 +56,7 @@ pipeline {
                 expression {
                     return env.GIT_BRANCH == "origin/master"
                 }}
-            environment { 
+            environment {  
                 CANARY_REPLICAS = 0
             }
             steps {
